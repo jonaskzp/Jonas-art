@@ -108,6 +108,12 @@ header nav a:hover {
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+.parede img {
+  margin-top: 40px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  height: 900px;
+}
 
 @media (max-width: 768px) {
   .logo img {
