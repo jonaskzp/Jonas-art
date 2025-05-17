@@ -14,6 +14,12 @@ body {
   padding: 10px;
   width: 150px;
 }
+.btzap{
+  position:fixed; bottom:20px; right:20px; z-index:1000;
+}
+.btzap img {
+  width:60px; height:60px;
+}
 
 header {
   background-color: #111;
@@ -112,13 +118,18 @@ header nav a:hover {
   margin-top: 40px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  height: 900px;
+  height: auto;
 }
 
 @media (max-width: 768px) {
   .logo img {
     width: 100px;
   }
+  
+  .btzap img {
+  width:40px; height:40px;
+}
+
 
   header {
     flex-direction: column;
@@ -130,7 +141,7 @@ header nav a:hover {
   }
 
   .portfolio-box .gallery img {
-    height: 200px;
+    max-height: 200px;
   }
 
   .portfolio-box .gallery {
@@ -139,6 +150,15 @@ header nav a:hover {
     width: 100%;
   }
 
+   .portfolio-box .parede img {
+    max-height: 200px;
+  }
+
+  .portfolio-box .parede {
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+  }
   .section {
     padding: 2rem 1rem;
   }
