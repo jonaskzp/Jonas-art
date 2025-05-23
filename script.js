@@ -15,7 +15,3 @@ document.addEventListener("DOMContentLoaded", function () {
         gallery.scrollBy({ left: scrollAmount, behavior: "smooth" });
     });
 });
-
-  function mostrarAlerta() {
-      alert("Olá! Este é um alerta simples em JavaScript.");
-    }
