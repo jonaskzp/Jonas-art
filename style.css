@@ -20,7 +20,6 @@ body {
 .btzap img {
   width:60px; height:60px;
 }
-
 header {
   background-color: #111;
   color: whitesmoke;
@@ -102,58 +101,124 @@ header nav a:hover {
   color: #51f55f;
 }
 
+
 .portfolio-box .gallery {
   display: flex;
   overflow-x: auto;
   gap: 1rem;
   margin-top: 1rem;
 }
-
 .portfolio-box .gallery img {
   height: 300px;
   border-radius: 6px;
   border: 1px solid #ccc;
 }
-.parede img {
-  margin-top: 40px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  height: auto;
+ #estudos h1{
+  color: #3ddd4b;
+ }
+ .box{
+        padding: rem;
+    }
+.box h1{
+    color: white;
+}
+.arte img {
+  width: auto;
+  max-height: 40rem;
+  border-radius: 0.8rem;
+  height: 100%;
+}
+.arte{
+  border:solid 2px #d5e4d6;
+  border-radius: .8rem;
+  padding: 1rem;
+  margin-right: 3rem;
+
+}
+.arte h1{
+  color: #ffffff;
+}
+.gallery1{
+  
+    display: flex;
+    align-items: center;
+    align-content:bottom;
+        gap: 1rem;
+        max-width: 88rem;
+        height: 50rem;
+        overflow-x: scroll;
+        overflow-y: hidden  ;
+        white-space: nowrap; 
+        scrollbar-width: none;
+}
+.section1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 128rem;
+    height: 50rem;
+    scrollbar-width: none;
+    overflow-x: scroll;
+    overflow-y: hidden  ;
+    }
+
+.section1::-webkit-scrollbar,
+.gallery1::-webkit-scrollbar {
+  display: none;
 }
 
+
+#scroll-left1{
+    all: unset;
+    background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.048));
+    position: absolute;
+    left: 1px; /* Lateral esquerda */
+    z-index: 10;
+    color: white;
+    padding: 8rem 7rem;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, opacity 0.3s;
+}
+#scroll-right1{
+    background: linear-gradient(to left,#000000, rgba(41, 39, 39, 0));
+    position: absolute;
+    border: none;
+    right: 1px; /* Lateral esquerda */
+    z-index: 10;
+    color: white;
+    padding: 8rem 7rem;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, opacity 0.3s;
+}
 @media (max-width: 768px) {
   .logo img {
     width: 100px;
-  }
-  
+  } 
   .btzap img {
   width:40px; height:40px;
 }
-
-
   header {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .rdsoc {
     flex-direction: column;
   }
-
   .portfolio-box .gallery img {
     max-height: 200px;
   }
-
   .portfolio-box .gallery {
     flex-direction: row;
     overflow-x: auto;
     width: 100%;
   }
-
    .portfolio-box .parede img {
     max-height: 250px;
   }
-
   .portfolio-box .parede {
     flex-direction: row;
     overflow-x: auto;
@@ -161,6 +226,10 @@ header nav a:hover {
   }
   .section {
     padding: 2rem 1rem;
+  }
+    #scroll-left1, #scroll-right1 {
+    font-size: 1.5rem;
+    padding: 5px;
   }
 }
 
