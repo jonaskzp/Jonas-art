@@ -167,7 +167,9 @@ header nav a:hover {
   display: none;
 }
 
-
+.arte p{
+  margin-bottom: 5px;
+}
 #scroll-left1{
     all: unset;
     background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.048));
