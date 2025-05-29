@@ -123,15 +123,21 @@ header nav a:hover {
     color: white;
 }
 .arte img {
-  width: auto;
-  max-height: 40rem;
-  border-radius: 0.8rem;
-  height: 100%;
+  
+  max-width: 700px;  /* ou o valor que desejar */
+  height: 500px;     /* define altura fixa */
+  object-fit:cover; /* recorta e centraliza mantendo o layout bonito */
+  display: block;
+
+  margin: 0 auto;
+  border-radius: .8rem;
 }
 .arte{
   border:solid 2px #d5e4d6;
   border-radius: .8rem;
   padding: 1rem;
+  height: auto;
+  width: 900px;  /* ou o valor que desejar */
   margin-right: 3rem;
 
 }
